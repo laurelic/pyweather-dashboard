@@ -51,37 +51,51 @@
         </div>
         <div class="row">
             <div class="col-8">
+                <img style="width: 100%;" src="Images\galaxy-2150186_1920.png" alt="Hello, world">
                 <p>The aim of this project was to observe weather patterns depending on latitude. Specifically, how does a location's proximity to the equator affect weather patterns? Though we can safely assume that the temperature increases, we also know that weather involves more than temperature. Not to mention, it does not hurt to test our assumptions. Hence, this project.</p>
-                <p>We utilized the OpenWeatherMap API to survey 500 randomly chosen cities for temperature, cloud cover, wind speed, and humidity. These factors were visualized according to cities' latitudinal position.</p>
-                <p>This site presents those visuals along with source code and analyses observed.</p>
+                <p>The objective was to utilize the OpenWeatherMap API to gather real-time temperature, cloud cover, wind speed, and humidity metrics for  500 randomly chosen cities. These factors were visualized according to cities' latitudinal position.</p>
+                <p>This site presents those visuals along with source code and analyses observed. The data was compiled in July 18, 2018.</p>
+                <h3>Process</h3>
+                <ul style="list-style-type:disc">
+                    <li>NumPy was used to randomly generte numbers to for 1500 latitude and longitude tuples. </li>
+                    <li>The latitude/longitude pairs were iterated through citipy to find a coresponding city. The measurement was discarded if no city was found. 620 cities were found successfully.</li>
+                    <li>API calls were performed on the 620 cities, achieving 557 successful calls.</li>
+                    <li>The cities and the data retrieved from the calls were stored in pandas and then visualized via matplotlib.</li>
+                  </ul>
             </div>
             <div class="col-1"></div> 
             <div class="col-3">
                 <div class="card mb-3">
                     <h3 class="card-header">Visuals</h3>
                     <div class="card-body">
-                        <h5 class="card-title">Temperature</h5>
                         <a href="tempvlat.html">
+                        <h5 class="card-title">Temperature</h5>
                         <img style="height: 150px; display: block;" src="Images\lat_v_temp.png" alt="temperature by latitude">
                         </a>
                     </div>
                 </div>
                 <div class="card mb-3">
                     <div class="card-body">
+                        <a href="windvlat.html">
                         <h5 class="card-title">Wind Speed</h5>
                         <img style="height: 150px; display: block;" src="Images\lat_v_wind.png" alt="wind speed by latitude">
+                        </a>
                     </div>
                 </div>
                 <div class="card mb-3">
                     <div class="card-body">
+                        <a href="cloudvlat.html">
                         <h5 class="card-title">Cloud Cover</h5>
                         <img style="height: 150px; display: block;" src="Images\lat_v_cloud.png" alt="cloud cover by latitude">
+                        </a>
                     </div>
                 </div>
                 <div class="card mb-3">
                     <div class="card-body">
+                        <a href="humvlat.html">
                         <h5 class="card-title">Humidity</h5>
                         <img style="height: 150px; display:block;" src="Images\lat_v_hum.png" alt="humidity by latitude">
+                        </a>
                     </div>
                 </div>
             </div> 
