@@ -1,0 +1,89 @@
+<!--PyWeather Landing Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTC-8">
+    <title>PyWeather Comparison</title>
+
+    <!--Link Bootswatch stylesheet-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PyWeather Challenge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                  <a class="dropdown-item" href="tempvlat.html">Temperature</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="windvlat.html">Wind Speed</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="cloudvlat.html">Cloud Cover</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="humvlat.html">Humidity</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="row">
+            <h1>Visual Comparisons</h1>
+        </div>
+        <div class="row">
+            <p>Though the data was compiled randomly, it was striking to see a preference for cities in the Northern Hemisphere. Latitude values ranged from -60 to 80 with what looked like 2/3 of the data points populating >0. In a way, the data visualized the landmass distibution of Earth itself: ~68% Northern Hemisphere, ~32% Southern Hemisphere. This indicates that we would see similar patterns when surveying Longitude data, as the landmass distribution is roughly the same East vs West.</p>
+        </div>
+        <div class="row">
+            <h6>Click on any plot to see an in depth analysis</h6>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <a href="tempvlat.html">
+                <img style="width: 100%;" src="Images\lat_v_temp.png" alt="tempature by latitude">
+                </a>
+            </div> 
+            <div class="col-6">
+                <a href="windvlat.html">
+                <img style="width: 100%;" src="Images\lat_v_wind.png" alt="wind speed by latitude">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <a href="cloudvlat.html">
+                <img style="width: 100%;" src="Images\lat_v_cloud.png" alt="cloud cover by latitude">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="humvlat.html">
+                <img style="width: 100%;" src="Images\lat_v_hum.png" alt="humidity by latitude">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
