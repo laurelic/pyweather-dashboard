@@ -9,6 +9,7 @@
 
     <!--Link Bootswatch stylesheet-->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,13 +30,15 @@
               <a class="nav-link" href="#">Comparison</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                 <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
                   <a class="dropdown-item" href="tempvlat.html">Temperature</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
+                  <a class="dropdown-item" href="windvlat.html">Wind Speed</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="cloudvlat.html">Cloud Cover</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="humvlat.html">Humidity</a>
                 </div>
               </li>
           </ul>
@@ -44,16 +47,45 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <h1>Background</h1>
-            </div>
+            <h1>Background</h1>
         </div>
         <div class="row">
             <div class="col-8">
-                <p>The aim of this project is to observe weather patterns depending on a location's proximity to the equator. Though we might assume that the temperature increases, we also know that weather involves more than temperature. Not to mention, it is healthy to confirm our assumptions before proceeding. As such, we utilized the OpenWeatherMap API to survey 500 randomly chosen cities for temperature, cloud cover, wind speed, and humidity. These factors were visualized according to cities' latitudinal position.</p>
+                <p>The aim of this project was to observe weather patterns depending on latitude. Specifically, how does a location's proximity to the equator affect weather patterns? Though we can safely assume that the temperature increases, we also know that weather involves more than temperature. Not to mention, it does not hurt to test our assumptions. Hence, this project.</p>
+                <p>We utilized the OpenWeatherMap API to survey 500 randomly chosen cities for temperature, cloud cover, wind speed, and humidity. These factors were visualized according to cities' latitudinal position.</p>
+                <p>This site presents those visuals along with source code and analyses observed.</p>
+            </div>
+            <div class="col-1"></div> 
+            <div class="col-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Visuals</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Temperature</h5>
+                        <a href="tempvlat.html">
+                        <img style="height: 150px; display: block;" src="Images\lat_v_temp.png" alt="temperature by latitude">
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Wind Speed</h5>
+                        <img style="height: 150px; display: block;" src="Images\lat_v_wind.png" alt="wind speed by latitude">
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Cover</h5>
+                        <img style="height: 150px; display: block;" src="Images\lat_v_cloud.png" alt="cloud cover by latitude">
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Humidity</h5>
+                        <img style="height: 150px; display:block;" src="Images\lat_v_hum.png" alt="humidity by latitude">
+                    </div>
+                </div>
             </div> 
         </div>
-    <p>This site presents those visuals along with source code and analyses observed.</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
