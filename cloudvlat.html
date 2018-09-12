@@ -1,0 +1,101 @@
+<!--PyWeather cloud Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTC-8">
+    <title>PyWeather Cloud</title>
+
+    <!--Link Bootswatch stylesheet-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PyWeather Challenge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                  <a class="dropdown-item" href="tempvlat.html">Temperature</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="windvlat.html">Wind Speed</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="cloudvlat.html">Cloud Cover</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="humvlat.html">Humidity</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="row">
+            <h1>Cloud Cover by Latitude</h1>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <img style="width: 100%" src="Images/lat_v_wind.png" alt="temperature by latitude">
+                <p>Cloud cover based on Latitude was a striking visualization. Latitude did not appear to have a strong influence on cloudiness, rather it raised questions about how cloud cover it measured. When compared to the visuals of humidity and wind speed, which both are rather nebulous, cloud levels seemed to bucket in particular % levels. The resulting image appeared to be a series of lines with scattered points between them. These "lines" of data populated around 0%, 20%, 40%, 75%, and 90%. Since cloud cover is generally measured in oktas, which is on a scale of 0-8, it follows that visualzations would populate along particular lines.</p>
+            </div>
+            <div class="col-1"></div> 
+            <div class="col-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Visuals</h3>
+                    <div class="card-body">
+                        <a href="tempvlat.html">
+                        <h5 class="card-title">Temperature</h5>
+                        <img style="height: 150px; display: block;" src="Images\lat_v_temp.png" alt="temperature by latitude">
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="windvlat.html">
+                        <h5 class="card-title">Wind Speed</h5>
+                        <img style="height: 150px; display: block;" src="Images\lat_v_wind.png" alt="wind speed by latitude">
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="cloudvlat.html">
+                        <h5 class="card-title">Cloud Cover</h5>
+                        <img style="height: 150px; display: block;" src="Images\lat_v_cloud.png" alt="cloud cover by latitude">
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="humvlat.html">
+                        <h5 class="card-title">Humidity</h5>
+                        <img style="height: 150px; display:block;" src="Images\lat_v_hum.png" alt="humidity by latitude">
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
