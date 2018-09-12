@@ -23,24 +23,42 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Comparison</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                  <a class="dropdown-item" href="tempvlat.html">Temperature</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
-    <h1>Background</h1>
-    <p>The aim of this project is to observe weather patterns depending on a location's proximity to the equator. Though we might assume that the temperature increases, we also know that weather involves more than temperature. Not to mention, it is healthy to confirm our assumptions before proceeding. As such, we utilized the OpenWeatherMap API to survey 500 randomly chosen cities for temperature, cloud cover, wind speed, and humidity. These factors were visualized according to cities' latitudinal position.</p>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Background</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p>The aim of this project is to observe weather patterns depending on a location's proximity to the equator. Though we might assume that the temperature increases, we also know that weather involves more than temperature. Not to mention, it is healthy to confirm our assumptions before proceeding. As such, we utilized the OpenWeatherMap API to survey 500 randomly chosen cities for temperature, cloud cover, wind speed, and humidity. These factors were visualized according to cities' latitudinal position.</p>
+            </div> 
+        </div>
     <p>This site presents those visuals along with source code and analyses observed.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
